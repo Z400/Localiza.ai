@@ -38,6 +38,8 @@ import { SpinnerComponent } from './shared/spinner.component';
     FullComponent,
     NavigationComponent,
     SidebarComponent,
+    HttpClientModule
+
   ],
   providers: [
     {

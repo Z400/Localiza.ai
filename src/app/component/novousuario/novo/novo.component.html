@@ -1,0 +1,58 @@
+<div class="container-fluid vh-100 d-flex justify-content-center align-items-center" style="background-color: rgb(228, 227, 227);">
+    <div class="card p-4" style="width: 100%; max-width: 400px; background: none;">
+        <div class="card-header text-center border-0" style="background: none;">
+            <img src="../../../../assets/images/image-homepage/3.png" alt="" class="img-fluid">
+        </div>
+        
+     
+
+        <div class="card-body text-center">
+            <h2 style="color: black;">CADASTRO</h2>
+
+            <div class="row justify-content-center" *ngIf="messageSuccessCadastro">
+                <div class="col-md-12">
+                    <div class="alert alert-primary">
+                        {{messageSuccessCadastro}}
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="row justify-content-center" *ngIf="messageErrorCadastro">
+                <div class="col-md-12">
+                    <div class="alert alert-danger">
+                        {{messageErrorCadastro}}
+                    </div>
+                </div>
+            </div>
+
+
+            <form #formCadastro="ngForm" (ngSubmit)="enviarCadastro(formCadastro)">
+                <div class="mb-3 text-start">
+                    <label for="exampleInputEmail1" class="form-label" style="color: black;">Titular do veiculo</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="titularVeiculoInput" ngModel required="">
+                 </div>
+                
+                <div class="mb-3 text-start">
+                    <label for="exampleInputPassword1" class="form-label" style="color: black;">CPF do titular</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="cpfTitularInput" ngModel required="">
+                </div>
+
+                <div class="mb-3 text-start">
+                    <label for="exampleInputPassword1" class="form-label" style="color: black;">Contato</label>
+                    <input type="tel" class="form-control" id="exampleInputPassword1" name="contatoInput" ngModel required="">
+                </div>
+
+
+                <div class="mb-3 text-start">
+                    <label for="exampleInputPassword1" class="form-label" style="color: black;">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="senhaInput" ngModel required="">
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100" [disabled]="formCadastro.invalid">Cadastrar</button>
+                <button type="button" class="btn btn-secondary w-100 mt-1" routerLink="">Voltar</button>
+
+            </form>
+        </div>
+    </div>
+</div>

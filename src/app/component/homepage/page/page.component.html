@@ -1,0 +1,67 @@
+<div class="container-fluid vh-100">
+    <div class="row h-100">
+        <!-- Coluna da esquerda -->
+        <div class="col-lg-9 col-md-7 d-none d-md-flex bg-primary align-items-center justify-content-center" id="imgHomepage">
+        </div>
+        <!-- Coluna da direita -->
+        <div class="col-lg-3 col-md-5 col-12 d-flex align-items-center justify-content-center" style="background-color: whitesmoke;">
+              
+                
+            <div class="container d-flex justify-content-center align-items-center vh-100">
+                
+                <div class="card" style="width: 100%; max-width: 400px;" style="background: none;">
+                    <div class="card-header d-flex justify-content-center" style="background: none; align-items: center;">
+                        <img src="../../../../assets/images/image-homepage/3.png" alt="">
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="row text-center" >
+                            <h2 style="color: black;">LOGIN</h2>
+                        </div>
+
+                        <div class="row justify-content-center" *ngIf="messageSuccess">
+                            <div class="col-md-12">
+                                <div class="alert alert-primary" style="text-align: center;">
+                                    {{messageSuccess}}
+                                </div>
+                            </div>
+                        </div>
+            
+                        
+                        <div class="row justify-content-center" *ngIf="messageError">
+                            <div class="col-md-12">
+                                <div class="alert alert-danger" style="text-align: center;">
+                                    {{messageError}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <form #formLogin="ngForm" (ngSubmit)="realizarLogin(formLogin)">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label" style="color: black;">CPF</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="cpfTitular" ngModel required="">
+                                <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+                            </div>
+                          
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label" style="color: black;">Senha</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" name="senhaInput" ngModel required="">
+                            </div>
+                          
+                            <div class="row text-center">
+                                <strong><a routerLink="/novo/cadastro">Não possui cadastro?</a></strong>
+                            </div>
+                          
+                            <div class="row mt-2 text-center">
+                                <button type="submit" class="btn btn-primary" [disabled]="formLogin.invalid">Acessar</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
