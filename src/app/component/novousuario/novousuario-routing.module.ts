@@ -5,7 +5,7 @@ import { NovoComponent } from './novo/novo.component';
 const routes: Routes = [
 
   {
-    path: 'cadastro',
+    path: 'usuario',
     component: NovoComponent
   }
 
