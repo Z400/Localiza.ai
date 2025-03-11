@@ -25,6 +25,9 @@ realizarLogin(form: NgForm) {
 
   this.service.loginUsuario(data).subscribe(
     res => {
+
+      localStorage.setItem( data.cpfTitular,'currentUser');
+
       this.messageSuccess = res.message;
       this.messageError = null;
       

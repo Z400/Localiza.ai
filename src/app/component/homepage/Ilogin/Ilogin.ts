@@ -1,4 +1,4 @@
 export interface Ilogin{
-    cpfTitular: number
+    cpfTitular: string,
     senha: string
 }
