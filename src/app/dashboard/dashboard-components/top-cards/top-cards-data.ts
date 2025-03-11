@@ -9,9 +9,9 @@ export const topcards: topcard[] = [
 
     {
         bgcolor: 'success',
-        icon: 'bi bi-wallet',
-        title: '$21k',
-        subtitle: 'Yearly Earning'
+        icon: 'bi bi-car-front',
+        title: '3',
+        subtitle: 'Veiculos cadastrados'
     },
     {
         bgcolor: 'danger',

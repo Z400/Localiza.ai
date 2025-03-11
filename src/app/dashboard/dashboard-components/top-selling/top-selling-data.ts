@@ -1,50 +1,37 @@
 export interface Product {
     image: string,
-    uname: string,
+    veiculo: string,
     gmail: string,
-    productName: string,
-    status: string,
-    weeks: number,
-    budget: string
+    placa: string,
+    trafegando: string,
+    dataCadastro: string,
+    anoVeiculo: string,
+    renavam: string
 }
 
 export const TopSelling: Product[] = [
 
     {
         image: 'assets/images/users/user1.jpg',
-        uname: 'Hanna Gover',
-        gmail: 'hgover@gmail.com',
-        productName: 'Flexy React',
-        status: 'danger',
-        weeks: 35,
-        budget: '95K'
+        veiculo: 'Gol G5',
+        gmail: 'matheusgoldship@gmail.com',
+        placa: 'JIR0788',
+        trafegando: 'SIM',
+        dataCadastro: '06/03/2025',
+        anoVeiculo: '2011/2012',
+        renavam: '00348457537'
+       
     },
     {
-        image: 'assets/images/users/user2.jpg',
-        uname: 'Hanna Gover',
-        gmail: 'hgover@gmail.com',
-        productName: 'Landing pro React',
-        status: 'info',
-        weeks: 35,
-        budget: '95K'
+        image: 'assets/images/users/user1.jpg',
+        veiculo: 'Honda Civic',
+        gmail: 'matheusgoldship@gmail.com',
+        placa: 'IRJ8807',
+        trafegando: 'SIM',
+        dataCadastro: '10/11/2023',
+        anoVeiculo: '2011/2012',
+        renavam:'8845896875'
     },
-    {
-        image: 'assets/images/users/user3.jpg',
-        uname: 'Hanna Gover',
-        gmail: 'hgover@gmail.com',
-        productName: 'Elite React	',
-        status: 'warning',
-        weeks: 35,
-        budget: '95K'
-    },
-    {
-        image: 'assets/images/users/user4.jpg',
-        uname: 'Hanna Gover',
-        gmail: 'hgover@gmail.com',
-        productName: 'Ample React',
-        status: 'success',
-        weeks: 35,
-        budget: '95K'
-    },
+ 
 
 ]

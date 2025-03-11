@@ -7,7 +7,7 @@ import {
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, RouterLink } from '@angular/router';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -38,8 +38,8 @@ import { SpinnerComponent } from './shared/spinner.component';
     FullComponent,
     NavigationComponent,
     SidebarComponent,
-    HttpClientModule
-
+    HttpClientModule,
+ 
   ],
   providers: [
     {
